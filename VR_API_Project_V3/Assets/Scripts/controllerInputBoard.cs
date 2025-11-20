@@ -4,6 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
 
 public class controllerInputBoard : MonoBehaviour
 {
+    // create more fields for the touch sensors on the controllers
     [Header("Thumbstick")]
     [SerializeField]
     Transform m_RThumbstickTransform;
@@ -39,7 +40,7 @@ public class controllerInputBoard : MonoBehaviour
     Transform m_LGripTransform;
 
     [SerializeField]
-    Vector2 m_GripRightRange = new Vector2(-0.0125f, -0.011f);
+    Vector2 m_GripRange = new Vector2(-0.0125f, -0.011f);
 
     [SerializeField]
     XRInputValueReader<float> m_RightGripInput = new XRInputValueReader<float>("Grip");
@@ -80,6 +81,8 @@ public class controllerInputBoard : MonoBehaviour
         if (m_RightStickInput != null)
         {
             var rStickVal = m_RightStickInput.ReadValue();
+            // move circle around on the Y and (x?) axis within limits based on local space
+            // also change colour
         }
 
         if (m_LeftStickInput != null)

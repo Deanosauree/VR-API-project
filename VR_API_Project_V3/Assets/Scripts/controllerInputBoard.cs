@@ -21,7 +21,6 @@ public class controllerInputBoard : MonoBehaviour
     [Header("Trigger")]
     [SerializeField]
     Transform m_RTriggerTransform;
-    [Header("Trigger")]
     [SerializeField]
     Transform m_LTriggerTransform;
 
@@ -51,16 +50,61 @@ public class controllerInputBoard : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
     {
-        
+        if (m_RThumbstickTransform == null || m_RGripTransform == null || m_RTriggerTransform == null || m_LThumbstickTransform == null || m_LGripTransform == null || m_LTriggerTransform == null)
+        {
+            enabled = false;
+            Debug.LogWarning($"Controller Animator component missing references on {gameObject.name}", this);
+            return;
+        }
+
+        m_RightStickInput?.EnableDirectActionIfModeUsed();
+        m_RightTriggerInput?.EnableDirectActionIfModeUsed();
+        m_RightGripInput?.EnableDirectActionIfModeUsed();
+        m_LeftStickInput?.EnableDirectActionIfModeUsed();
+        m_LeftTriggerInput?.EnableDirectActionIfModeUsed();
+        m_LeftGripInput?.EnableDirectActionIfModeUsed();
     }
 
     // Update is called once per frame
     void OnDisable()
     {
-       
+        m_RightStickInput?.DisableDirectActionIfModeUsed();
+        m_RightTriggerInput?.DisableDirectActionIfModeUsed();
+        m_RightGripInput?.DisableDirectActionIfModeUsed();
+        m_LeftStickInput?.DisableDirectActionIfModeUsed();
+        m_LeftTriggerInput?.DisableDirectActionIfModeUsed();
+        m_LeftGripInput?.DisableDirectActionIfModeUsed();
     }
     private void Update()
     {
+        if (m_RightStickInput != null)
+        {
+            var rStickVal = m_RightStickInput.ReadValue();
+        }
+
+        if (m_LeftStickInput != null)
+        {
+            var lStickVal = m_LeftStickInput.ReadValue();
+        }
+        if (m_RightGripInput != null)
+        {
+            var rGripVal = m_RightGripInput.ReadValue();
+        }
         
+        if (m_LeftGripInput != null)
+        {
+            var lGripVal = m_LeftGripInput.ReadValue();
+        }
+
+        if (m_RightTriggerInput != null) 
+        { 
+            var rTriggerVal = m_RightTriggerInput.ReadValue();
+        }
+
+        if (m_LeftTriggerInput != null) 
+        { 
+            var lTriggerVal = m_LeftTriggerInput.ReadValue();
+        }
+
     }
 }

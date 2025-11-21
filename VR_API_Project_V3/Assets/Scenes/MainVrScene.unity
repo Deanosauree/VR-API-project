@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &155513890 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4831528302390230829, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+  m_PrefabInstance: {fileID: 333741985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &171801346
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +308,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8994291137098678363, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.025
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -347,6 +356,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 82b108920107a4548885dcf636915c6f, type: 2}
+    - target: {fileID: -8332815280133001283, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -367,6 +380,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 5831f556f5019dc4a8518d6754b7958c, type: 2}
+    - target: {fileID: -4366696286277696364, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.025
+      objectReference: {fileID: 0}
     - target: {fileID: -602757965659724082, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -383,10 +400,30 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d3e2655015865a844ac0d266f84da0c2, type: 2}
+    - target: {fileID: 5471797652854965547, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471797652854965547, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6364711121653154321, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.025
+      objectReference: {fileID: 0}
     - target: {fileID: 6633969805405379589, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d3e2655015865a844ac0d266f84da0c2, type: 2}
+    - target: {fileID: 7185353399092956957, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185353399092956957, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7535732066759780959, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -395,6 +432,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 5831f556f5019dc4a8518d6754b7958c, type: 2}
+    - target: {fileID: 8866691048963151422, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.025
+      objectReference: {fileID: 0}
     - target: {fileID: 8916249633559463945, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -424,9 +465,132 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bd028bff85307043b85e0b9198afbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::controllerInputBoard
+  m_ButtonPressDistance: {x: -0.045, y: -0.025}
+  m_RightPrimaryButtonTr: {fileID: 1194141627}
+  m_RightSecondaryButtonTr: {fileID: 1949253390}
+  m_LeftPrimaryButtonTr: {fileID: 673685960}
+  m_LeftSecondaryButtonTr: {fileID: 1359124770}
+  m_ButtonEnabledMaterial: {fileID: 2100000, guid: 6ef87b43c7b7ad1489ee3cd0707d16e0, type: 2}
+  m_ButtonDisabledMaterial: {fileID: 2100000, guid: d3e2655015865a844ac0d266f84da0c2, type: 2}
+  m_RightPrimaryBPress:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Press
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 46c6d049-285d-42ef-a810-82d95b5dd59f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: -3875704489234743591, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftPrimaryBPress:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Press
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 3a1e59c8-18eb-4c98-bca6-02efda338d8e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: -2673260155009354263, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_RightSecondaryBPress:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Press
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: f93b0ca9-fbb6-4ad1-b3c3-f00006e13946
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 2952572279789811447, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftSecondaryBPress:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Press
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 8c777ea8-870c-44e3-8af2-53dd37d4ddac
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 8753452805772301630, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_RightPrimaryBTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: f680acab-4b03-4912-b923-e73b6d009342
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: -4406293918631006156, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftPrimaryBTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: cc18910a-5ddc-48db-a123-9f61897f6d76
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 3142523663604212454, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_RightSecondaryBTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 205395fd-ce83-4155-b088-2b35e92905b7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 6228837197042633426, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftSecondaryBTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 1906dcd2-593c-4763-821d-2f795db42108
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 9176432343114298400, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
   m_RThumbstickTransform: {fileID: 333741993}
   m_LThumbstickTransform: {fileID: 333741992}
-  m_StickRotationRange: {x: 30, y: 30}
+  m_RThumbstickRing: {fileID: 883539641}
+  m_LThumbstickRing: {fileID: 155513890}
+  m_ThumbTouchActive: {fileID: 2100000, guid: 38955ac25adbc4946a339b0976b7433c, type: 2}
+  m_ThumbTouchInactive: {fileID: 2100000, guid: 5831f556f5019dc4a8518d6754b7958c, type: 2}
+  m_StickRotationRange: {x: 0.2, y: 0.2}
   m_RightStickInput:
     m_InputSourceMode: 2
     m_InputAction:
@@ -455,9 +619,64 @@ MonoBehaviour:
     m_InputActionReference: {fileID: -60998027439631388, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualValue: {x: 0, y: 0}
+  m_RightStickTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Thumbstick Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 7c606e17-4f0b-4042-a8b2-5e79e9cb6171
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: -6009021154061427681, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftStickTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Thumbstick Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 4c37ebd3-a99e-4e59-b336-da88c8ede0cf
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 6426612772054121203, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_RightStickClick:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Thumbstick Click
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 46824e5a-f65b-4562-99f1-a5661b4edc5d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: -2501911568734295024, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftStickClick:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Thumbstick Click
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 01d1a5fe-d053-4d97-9af2-23da3de7c5ea
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 1461365457994505050, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
   m_RTriggerTransform: {fileID: 333741991}
   m_LTriggerTransform: {fileID: 333741990}
-  m_TriggerXAxisRotationRange: {x: 0, y: -15}
   m_RightTriggerInput:
     m_InputSourceMode: 2
     m_InputAction:
@@ -488,7 +707,8 @@ MonoBehaviour:
     m_ManualValue: 0
   m_RGripTransform: {fileID: 333741989}
   m_LGripTransform: {fileID: 333741988}
-  m_GripRightRange: {x: -0.0125, y: -0.011}
+  m_gripDisableMaterial: {fileID: 2100000, guid: 82b108920107a4548885dcf636915c6f, type: 2}
+  m_gripEnableMaterial: {fileID: 2100000, guid: 036e7689b0f704646b745f6512632996, type: 2}
   m_RightGripInput:
     m_InputSourceMode: 2
     m_InputAction:
@@ -588,6 +808,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.7044694, y: -3.2998872, z: -5.2844934}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &527753514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 527753515}
+  m_Layer: 0
+  m_Name: LookAwayCube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &527753515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527753514}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.45094, y: 0, z: 2.53241}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -874,6 +1125,26 @@ Transform:
   - {fileID: 171801347}
   m_Father: {fileID: 1581512277}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &673685960 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6364711121653154321, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+  m_PrefabInstance: {fileID: 333741985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &883539641 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2368568033113227185, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+  m_PrefabInstance: {fileID: 333741985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1194141627 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8994291137098678363, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+  m_PrefabInstance: {fileID: 333741985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1359124770 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8866691048963151422, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+  m_PrefabInstance: {fileID: 333741985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1387248073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -948,6 +1219,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3475118261464492563, guid: 9f3369e30fbd31f4bb596b1a99babe83, type: 3}
   m_PrefabInstance: {fileID: 1387248073}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1393034619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393034620}
+  m_Layer: 0
+  m_Name: Squeaker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1393034620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393034619}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.45094, y: 0, z: 2.53241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581512274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,8 +1328,131 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bd028bff85307043b85e0b9198afbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::controllerInputBoard
+  m_ButtonPressDistance: {x: 0, y: -15}
+  m_RightPrimaryButtonTr: {fileID: 0}
+  m_RightSecondaryButtonTr: {fileID: 0}
+  m_LeftPrimaryButtonTr: {fileID: 0}
+  m_LeftSecondaryButtonTr: {fileID: 0}
+  m_ButtonEnabledMaterial: {fileID: 0}
+  m_ButtonDisabledMaterial: {fileID: 0}
+  m_RightPrimaryBPress:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Press
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: fa53fff2-3351-47c8-a89f-8ae252f82156
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftPrimaryBPress:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Press
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 9961d2b8-3d42-49b2-8b27-7d791e86e1a2
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_RightSecondaryBPress:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Press
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: d9524734-d8b7-4129-bb38-06439182de27
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftSecondaryBPress:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Press
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 9136badb-089c-4a02-917a-a984fd72f308
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_RightPrimaryBTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 67a339cd-fa33-4cc1-aa89-e8300db1db61
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftPrimaryBTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: fcbec379-791d-48e8-8883-9e6c36b8d3bb
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_RightSecondaryBTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 3683f2be-647d-4bb3-97c0-c74862a10eda
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftSecondaryBTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Button Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: ff7aa1eb-443f-4e0e-84fc-ede21093fac7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
   m_RThumbstickTransform: {fileID: 0}
   m_LThumbstickTransform: {fileID: 0}
+  m_RThumbstickRing: {fileID: 0}
+  m_LThumbstickRing: {fileID: 0}
+  m_ThumbTouchActive: {fileID: 0}
+  m_ThumbTouchInactive: {fileID: 0}
   m_StickRotationRange: {x: 30, y: 30}
   m_RightStickInput:
     m_InputSourceMode: 2
@@ -1057,9 +1482,64 @@ MonoBehaviour:
     m_InputActionReference: {fileID: 0}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualValue: {x: 0, y: 0}
+  m_RightStickTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Thumbstick Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 079e68a9-0b1d-4768-9ef2-02084dbe2606
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftStickTouch:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Thumbstick Touch
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 9bfaa439-922c-4b43-9024-e82c16f4648d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_RightStickClick:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Thumbstick Click
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: dc06aa5f-e4e4-44c7-9da5-220d3fb9b0f2
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
+  m_LeftStickClick:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Thumbstick Click
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 074b71d6-936d-4cbe-9252-786ab4fb1a0a
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: 0
   m_RTriggerTransform: {fileID: 0}
   m_LTriggerTransform: {fileID: 0}
-  m_TriggerXAxisRotationRange: {x: 0, y: -15}
   m_RightTriggerInput:
     m_InputSourceMode: 2
     m_InputAction:
@@ -1090,7 +1570,8 @@ MonoBehaviour:
     m_ManualValue: 0
   m_RGripTransform: {fileID: 0}
   m_LGripTransform: {fileID: 0}
-  m_GripRightRange: {x: -0.0125, y: -0.011}
+  m_gripDisableMaterial: {fileID: 0}
+  m_gripEnableMaterial: {fileID: 0}
   m_RightGripInput:
     m_InputSourceMode: 2
     m_InputAction:
@@ -1246,6 +1727,37 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &1634750807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1634750808}
+  m_Layer: 0
+  m_Name: Vibration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1634750808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634750807}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.45094, y: 0, z: 2.53241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1669139373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,6 +1860,11 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+--- !u!4 &1949253390 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4366696286277696364, guid: 9295012cbd64a304699d5e65866cfb71, type: 3}
+  m_PrefabInstance: {fileID: 333741985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2038221186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,3 +1986,6 @@ SceneRoots:
   - {fileID: 2038221190}
   - {fileID: 410539238}
   - {fileID: 1581512277}
+  - {fileID: 1634750808}
+  - {fileID: 1393034620}
+  - {fileID: 527753515}

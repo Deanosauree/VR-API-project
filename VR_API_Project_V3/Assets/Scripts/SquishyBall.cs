@@ -57,7 +57,6 @@ public class SquishyBall : MonoBehaviour
                 triggerVal = m_LeftTriggerInput.ReadValue();
                 break;
         }
-        Debug.Log(triggerVal);
         
         transform.localScale = scaler;
         if (scaler.y > triggerVal & audioSource.resource != squeakOutAudio)

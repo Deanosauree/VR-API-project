@@ -1267,7 +1267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e5172386f9c1e440bd86c6a20073ca0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7911
+      value: 0.678
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e5172386f9c1e440bd86c6a20073ca0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1677,7 +1677,7 @@ Rigidbody:
   serializedVersion: 5
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3732,15 +3732,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a9a2cc20fc21fe45817398cb37b602b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0045123
+      value: 1.958
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a9a2cc20fc21fe45817398cb37b602b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.95
+      value: 0.723
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a9a2cc20fc21fe45817398cb37b602b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.253964
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a9a2cc20fc21fe45817398cb37b602b, type: 3}
       propertyPath: m_LocalRotation.w

@@ -1,0 +1,5 @@
+create additional grab transform for second hand
+track a single axis of its position
+have the center of the line slerp between the min and the max pull, stopping at the max or min regardless of how much you pull =it
+also create an arrow that spawns at the bows origin and follows the transform, until you let go when it launches (does not need to fly well)
+maybe base speed off the pull

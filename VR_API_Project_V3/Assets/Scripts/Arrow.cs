@@ -68,7 +68,7 @@ public class Arrow : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (inAir)
+        if (inAir && !collision.transform.TryGetComponent(out ArrowSpawner spawner))
         {
             rb.interpolation = RigidbodyInterpolation.None;
             transform.parent = collision.transform;

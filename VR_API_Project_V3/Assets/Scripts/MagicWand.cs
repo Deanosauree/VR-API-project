@@ -5,10 +5,6 @@ public class MagicWand : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField]
-    float vibrationForce = 0.1f;
-    [SerializeField]
-    float vibrationSpeed = 1.0f;
-    [SerializeField]
     AudioSource audioSource;
     ConstantHapticPlayer hapticPlayer;
 
@@ -22,18 +18,6 @@ public class MagicWand : MonoBehaviour
         /*
         visualRotation = wandVisualTransform.rotation;
         initialRotation = wandVisualTransform.rotation;
-        */
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        Quaternion vGoal = Quaternion.Euler(Random.Range(-vibrationForce, vibrationForce),Random.Range(-vibrationForce,vibrationForce),Random.Range(-vibrationForce,vibrationForce));
-        visualRotation.x = Mathf.Lerp(visualRotation.x, vGoal.x, vibrationSpeed);
-        visualRotation.y = Mathf.Lerp(visualRotation.y, vGoal.y, vibrationForce);
-        visualRotation.z = Mathf.Lerp(visualRotation.z, vGoal.z, vibrationSpeed);
-        wandVisualTransform.Rotate(visualRotation.eulerAngles);
         */
     }
 

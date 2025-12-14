@@ -7,6 +7,7 @@ public class MagicWand : MonoBehaviour
     [SerializeField]
     AudioSource audioSource;
     ConstantHapticPlayer hapticPlayer;
+    GameObject currentController;
 
     Quaternion visualRotation;
     Quaternion initialRotation;
@@ -23,19 +24,38 @@ public class MagicWand : MonoBehaviour
 
     public void grab(SelectEnterEventArgs Args)
     {
-        audioSource.Play();
-        hapticPlayer.startVibrations(Args.interactorObject.handedness);
-        //enabled = true;
+        if (Args.interactorObject.transform.parent != null)
+        {
+            currentController = getControllerObject(Args.interactorObject.transform.parent);
+            if (currentController != null)
+            {
+                audioSource.Play();
+                hapticPlayer.startVibrations(Args.interactorObject.handedness);
+                currentController.SetActive(false);
+            }
+        }
+        
     }
 
     public void unGrab(SelectExitEventArgs Args) 
     {
-        /*
-        wandVisualTransform.Rotate(initialRotation.eulerAngles);
-        visualRotation = wandVisualTransform.rotation;
-        */
-        audioSource.Stop();
-        hapticPlayer.stopVibrations();
-        //enabled = false;
+        if (currentController != null)
+        {
+            audioSource.Stop();
+            hapticPlayer.stopVibrations();
+            currentController?.SetActive(true);
+            currentController = null;
+        }
+    }
+    private GameObject getControllerObject(Transform parent)
+    {
+        foreach (Transform child in parent.transform)
+        {
+            if (child.tag == "GameController")
+            {
+                return child.gameObject;
+            }
+        }
+        return null;
     }
 }

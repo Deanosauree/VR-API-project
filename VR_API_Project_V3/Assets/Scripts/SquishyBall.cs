@@ -19,10 +19,6 @@ public class SquishyBall : MonoBehaviour
     [SerializeField]
     XRInputValueReader<float> m_LeftTriggerInput = new XRInputValueReader<float>("Trigger");
     [SerializeField]
-    GameObject m_rController;
-    [SerializeField]
-    GameObject m_lController;
-    [SerializeField]
     Transform m_rightEyeTransform;
     [SerializeField]
     Transform m_leftEyeTransform;
@@ -33,6 +29,7 @@ public class SquishyBall : MonoBehaviour
     AudioClip squeakOutAudio;
     Vector3 scaler = Vector3.one;
     float eyeScaler = 1f;
+    GameObject currentController;
     //Transform myTransform;
     //XRGeneralGrabTransformer grabTransformer;
     void Start()
@@ -89,32 +86,47 @@ public class SquishyBall : MonoBehaviour
         m_rightEyeTransform.localScale = new Vector3(1,1,1);
         m_leftEyeTransform.localScale = new Vector3(1,1,1);
         scaler = Vector3.one;
-        m_lController.SetActive(true);
-        m_rController.SetActive(true);
+        currentController?.SetActive(true);
         audioSource.Stop();
+        currentController = null;
     }
 
     public void Squeeze(SelectEnterEventArgs Args)
     {
-        Debug.Log(Args.interactorObject.handedness);
-        if (Args.interactorObject.handedness == InteractorHandedness.Right)
+        if (Args.interactorObject.transform.parent != null)
         {
-            handedness = "Right";
-            m_rController.SetActive(false);
-        }
-        else 
-        {
-            handedness = "Left";
-            m_lController.SetActive(false);
-        }
+            currentController = getControllerObject(Args.interactorObject.transform.parent);
+            currentController.SetActive(false);
+            if (Args.interactorObject?.handedness == InteractorHandedness.Right)
+            {
+                handedness = "Right";
+            }
+            else 
+            { 
+                handedness = "Left";
+            }
 
-        
-        
-        enabled = true;
+
+
+                enabled = true;
+        }
     }
 
     public void Unsqueeze(SelectExitEventArgs Args)
     {
+        
         enabled = false;
+    }
+
+    private GameObject getControllerObject(Transform parent)
+    {
+        foreach (Transform child in parent.transform)
+        {
+            if (child.tag == "GameController")
+            {
+                return child.gameObject;
+            }
+        }
+        return null;
     }
 }

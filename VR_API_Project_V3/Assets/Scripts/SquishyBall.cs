@@ -76,8 +76,6 @@ public class SquishyBall : MonoBehaviour
         m_leftEyeTransform.localScale = new Vector3(eyeScaler, eyeScaler, eyeScaler / scaler.y);
         scaler.y = Mathf.Lerp(scaler.y, 1-(triggerVal*squeezeAmount),.1f);
         eyeScaler = Mathf.Lerp(eyeScaler, 1 + (triggerVal * squeezeAmount), 0.1f);
-       
-
 
     }
     private void OnDisable()
@@ -106,10 +104,10 @@ public class SquishyBall : MonoBehaviour
                 handedness = "Left";
             }
 
-
-
-                enabled = true;
+            enabled = true;
         }
+        else { enabled = false; }
+
     }
 
     public void Unsqueeze(SelectExitEventArgs Args)

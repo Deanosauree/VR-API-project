@@ -18,9 +18,13 @@ public class ConstantHapticPlayer : MonoBehaviour
     [SerializeField]
     float m_vibrationFrequency;
     string handedness = "Right";
+    IXRHapticImpulseChannel leftChannel;
+    IXRHapticImpulseChannel rightChannel;
     void Start()
     {
         enabled = false;
+        leftChannel = m_lHapticOutput.GetChannelGroup()?.GetChannel();
+        rightChannel = m_rHapticOutput.GetChannelGroup()?.GetChannel();
     }
 
 
@@ -51,10 +55,10 @@ public class ConstantHapticPlayer : MonoBehaviour
         switch (handedness)
         {
             case "Right":
-                return m_rHapticOutput.GetChannelGroup()?.GetChannel()?.SendHapticImpulse(m_AmplitudeMultiplier, m_vibrationDuration, m_vibrationFrequency) ?? false;
+                return rightChannel?.SendHapticImpulse(m_AmplitudeMultiplier, m_vibrationDuration, m_vibrationFrequency) ?? false;
 
             case "Left":
-                return m_lHapticOutput.GetChannelGroup()?.GetChannel()?.SendHapticImpulse(m_AmplitudeMultiplier, m_vibrationDuration, m_vibrationFrequency) ?? false;
+                return leftChannel?.SendHapticImpulse(m_AmplitudeMultiplier, m_vibrationDuration, m_vibrationFrequency) ?? false;
             default:
                 return false;
         }

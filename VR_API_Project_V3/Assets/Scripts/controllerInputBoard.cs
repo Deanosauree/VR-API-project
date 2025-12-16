@@ -109,7 +109,7 @@ public class controllerInputBoard : MonoBehaviour
             || m_RightPrimaryButtonTr == null|| m_LeftPrimaryButtonTr == null || m_RightSecondaryButtonTr == null || m_LeftSecondaryButtonTr == null || m_RThumbstickRing == null || m_LThumbstickRing == null)
         {
             enabled = false;
-            Debug.LogWarning($"Controller Animator component missing references on {gameObject.name}", this);
+            Debug.LogWarning($"Missing transform assignment on {gameObject.name}", this);
             return;
         }
 
@@ -258,6 +258,7 @@ public class controllerInputBoard : MonoBehaviour
                 m_RThumbstickRing.GetComponent<Renderer>().material = m_ThumbTouchInactive;
             }
         }
+
         if (m_LeftStickTouch != null)
         {
             var touchVal = m_LeftStickTouch.ReadValue();
@@ -284,6 +285,7 @@ public class controllerInputBoard : MonoBehaviour
             var lStickVal = m_LeftStickInput.ReadValue();
             m_LThumbstickTransform.localPosition = new Vector3(lStickVal.x*m_StickRotationRange.x*-1,m_StickRotationRange.y* lStickVal.y,0f);
         }
+
         if (m_RightGripInput != null)
         {
             var rGripVal = m_RightGripInput.ReadValue();
@@ -311,6 +313,7 @@ public class controllerInputBoard : MonoBehaviour
                 m_LGripTransform.GetComponent<Renderer>().material = m_gripDisableMaterial;
             }
         }
+
         if (m_RightTriggerInput != null)
         {
             var rTriggerVal = m_RightTriggerInput.ReadValue();
